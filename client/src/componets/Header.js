@@ -71,7 +71,19 @@ const Header = () => {
   return (
     <AppBar position="sticky" sx={{ background: `${theme.bg}` }}>
       <Toolbar>
-        <Typography variant="h4">BlogsApp</Typography>
+        <Typography 
+          variant="h4" 
+          sx={{
+            fontFamily: "'Poppins', sans-serif",
+            fontWeight: 800,
+            background: 'linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            textShadow: '0 0 30px rgba(255, 255, 255, 0.3)',
+          }}
+        >
+          FLY Thought
+        </Typography>
         {isLoggedIn && (
           <Box display="flex" marginLeft={"auto"} marginRight="auto">
             <Tabs
